@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "start1": "react-native --openssl-legacy-provider start",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build"
   },
   "dependencies": {
     "expo": "~43.0.2",
